@@ -1,0 +1,3 @@
+How this would work:
+Use Python as a backend, using the FastAPI library. Python will also be used to handle saving information to database, and keeping a server for the Web Interface.
+HTML will be used as an interface, possible CSS as well (if I'm not lazy), and JavaScript will be used to handle buttons and make requests to the local server.
