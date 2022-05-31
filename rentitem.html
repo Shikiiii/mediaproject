@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark item as rented</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Mark item as rented</legend>
+        <form action="rentitem.php">
+            <h3>Enter item ID:</h3>
+            <input type="number" placeholder="Enter ID" id="itemid" required/>
+            <h3>Date rented:</h3>
+            <input type="date" id="date" required/>
+            <h3>Date to be returned:</h3>
+            <input type="date" id="date" required/>
+            <br><br>
+            <input type="submit" value="Submit"/>
+            <a href="http://127.0.0.1:8000/">
+                <input type="button" value="Go back">
+            </a>
+        </form>
+    </fieldset>
+</body>
+</html>
