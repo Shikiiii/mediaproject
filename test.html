@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Welcome</title>
     <style>
     table, th, td {
         border:1px solid black;
@@ -10,11 +10,29 @@
     </style>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <button>Add new item</button>
-    <button>Remove an item</button>
-    <button>Mark item as rented</button>
-    <button>Unmark item as rented</button>
+    <fieldset>
+    <legend>Controls</legend>
+        <a href="http://127.0.0.1:8000/addnewitem">
+            <input type="button" value="Add new item"/>
+        </a>
+        <a href="http://127.0.0.1:8000/removeitem">
+            <input type="button" value="Remove an item"/>
+        </a>
+        <a href="http://127.0.0.1:8000/rentitem">
+            <input type="button" value="Mark item as rented"/>
+        </a>
+        <a href="http://127.0.0.1:8000/unrentitem">
+            <input type="button" value="Unmark item as rented"/>
+        </a>
+    </fieldset>
+    <br><hr><br>
+    <fieldset>
+        <legend>Search by item's name</legend>
+        <form action="search.php">
+            <input type="text" placeholder="Type a name to search..." id="searchinfo" required/>
+            <input type="submit" value="Search"/>
+        </form>
+    </fieldset>
     <br><br>
     <table>
         <tr>

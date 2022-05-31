@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new item</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Add a new item</legend>
+        <form action="additem.php">
+            <h3>Enter name:</h3>
+            <input type="text" placeholder="Name" id="name" required/>
+            <h3>Select the date you are adding this item:</h3>
+            <input type="date" id="date" required/>
+            <h3>ISBN:</h3>
+            <input type="checkbox" id="genqrcode"/>
+            <label for="genqrcode">Generate a QR code instead of ISBN</label>
+            <br><br>
+            <input type="text" id="isbn" placeholder="ISBN (Optional)"/>
+            <br><br>
+            <input type="submit" value="Submit"/>
+            <a href="http://127.0.0.1:8000/">
+                <input type="button" value="Go back">
+            </a>
+        </form>
+    </fieldset>
+</body>
+</html>
